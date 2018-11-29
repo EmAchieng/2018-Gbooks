@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/mystyle.css">
+<meta charset="UTF-8">
+
+<style type="text/css">
+		header {
+		font-size: 40px;
+		}
+</style>
+<title>G-Books App</title>
+</head>
+<body>
+	<header>
+	
+		<a href="index.html" onclick="replace()">G-Books</a>
+		
+		
+		
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="myaccount.html">My Account</a></li>
+			<li><a href="contact.html">Contacts</a></li>
+		</ul>
+	</nav>
+	<aside id="left">
+	<h3><strong> Categories</strong></h3>
+		<ul>
+			
+			<li><a target="iframe" href="computerscience.html">컴퓨터공학</a></li>
+			<li><a target="iframe" href="koreanlanguage.html">한국어</a></li>
+			<li><a target="iframe" href="socialsciences.html">사회복지</a></li>
+			<li><a target="iframe" href="business.html">경영 학과</a></li>
+			<li><a target="iframe" href="others.html">기타</a></li>
+			
+		</ul>
+	</aside>
+	<section id="main">
+		<article id="article1">
+			<iframe name="iframe1" src="computerscience.html" width="440" height="300" seamless></iframe>
+			<!-- 상품에 대한 정보를 여기서 보여준다. -->
+		</article>
+	</section>
+	<aside id="right">
+		<!-- 쇼핑카트와 로그인 정보를 보여준다. -->
+		<div id="bookcart">
+			<h4>Book Cart</h4>
+			<br />
+			<a href="bookcart.html"> 쇼핑카트 보기</a>
+		</div>
+		<div id="login">
+			<h4>Log In</h4>
+			<form action="#">
+			아이디
+			<input type="text"/><br/>
+			패스워드
+			<input type="password"/><br>
+			<input type="submit" value="로그인"/>
+			<input type="reset" value="초기화"/><br/>
+			<a href="register.html" target="_blank" id="register">회원가입</a>
+			<a href="checkpassword.html" id="forgot">비밀번호분실</a>
+			</form>
+		</div>
+	</aside>
+	<footer>
+		<!-- 각주에 해당되는 콘텐츠는 여기에 둔다. -->
+		G-Books.
+	</footer>
+
+</body>
+</html>
